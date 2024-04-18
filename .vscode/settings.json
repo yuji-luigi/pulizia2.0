@@ -1,0 +1,36 @@
+{
+  "workbench.colorCustomizations": {
+    // "titleBar.activeForeground": "#fff",
+    // "titleBar.inactiveForeground": "#ffffffcc",
+    // "titleBar.activeBackground": "#4F7942",
+    // "titleBar.inactiveBackground": "#4F7942CC"
+  },
+  "files.associations": {
+    "css": "postcss",
+    "*.css": "postcss"
+  },
+  // "css.validate": false,
+  "postcss.validate": true,
+  "debug.focusWindowOnBreak": true,
+  "[postcss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "cSpell.words": [
+    "actl",
+    "Datatable",
+    "faviconsvg",
+    "formfields",
+    "Geoapify",
+    "haussmann",
+    "modulz"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascriptreact]": {
+    // "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  }
+}

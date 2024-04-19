@@ -4,7 +4,6 @@ import React from "react";
 import config from "../../../../sanity.config";
 
 const AdminPage = () => {
-  // return null;
   return <NextStudio config={config} />;
 };
 

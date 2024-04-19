@@ -1,0 +1,12 @@
+{
+	"root": true,
+	"project": {
+		"name": "Pulizia 2.0",
+		"basePath": "/admin"
+	},
+	"api": {
+		"projectId": "5xo2k521",
+		"dataset": "production"
+	},
+	"plugins": []
+}

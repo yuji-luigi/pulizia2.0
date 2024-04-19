@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className="header">
+        {/* <header className="header">
           <h2 className="logo-text">2.0</h2>
         </header>
         <div className="main-grid">
@@ -36,9 +36,9 @@ export default function RootLayout({
               <a href="/contact" className="nav-link">
                 OASI DI BENESSERE
               </a>
-            </nav>
-            {children}
-          </div>
+            </nav> */}
+        {children}
+        {/* </div>
           <div className="sidebar">
             <div className="sticky">
               <h2 className="sidebar-title">Pulizia 2.0</h2>
@@ -47,7 +47,7 @@ export default function RootLayout({
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </body>
     </html>
   );

@@ -1,5 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { HomeLayout } from "../layouts/home-layout";
+import { getWebsite } from "../../sanity/sanity-utils";
 
 const images = [
   {
@@ -52,29 +54,34 @@ const images = [
   },
 ];
 
-export default function Home() {
+export default async function Home() {
+  const [website] = await getWebsite();
+  console.log(website);
   return (
-    <main>
-      <div className="image-grid">
-        {images.map((image, index) => (
-          <div key={index}>
-            <Image
-              className="image"
-              key={index}
-              height={image.height}
-              width={image.width}
-              src={`https://source.unsplash.com/random/${image.width}x${image.height}`}
-              alt="logo"
-            />
-          </div>
-        ))}
-      </div>
-      <footer>
-        2.0, porta la pulizia a un step più qualificato, trasformandola da una
-        attività tradizionale di solo superficie a una esperienza di consumo e
-        un efficace strumento di comunicazione. Rafforzando la tua autenticità
-        della storia di ogni azienda.
-      </footer>
-    </main>
+    <HomeLayout>
+      <main>
+        <div className="image-grid">
+          {images.map((image, index) => (
+            <div key={index}>
+              <Image
+                className="image"
+                key={index}
+                height={image.height}
+                width={image.width}
+                src={`https://source.unsplash.com/random/${image.width}x${image.height}`}
+                alt="logo"
+              />
+            </div>
+          ))}
+        </div>
+        <footer>
+          {website?.tel}
+          2.0, porta la pulizia a un step più qualificato, trasformandola da una
+          attività tradizionale di solo superficie a una esperienza di consumo e
+          un efficace strumento di comunicazione. Rafforzando la tua autenticità
+          della storia di ogni azienda.
+        </footer>
+      </main>
+    </HomeLayout>
   );
 }

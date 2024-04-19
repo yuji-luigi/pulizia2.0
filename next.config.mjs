@@ -8,6 +8,14 @@ const nextConfig = {
       },
     ],
   },
+  rewrites() {
+    return [
+      {
+        source: "/admin/:path*",
+        destination: "/src/app/admin[[...index]]/page.tsx",
+      },
+    ];
+  },
 };
 
 export default nextConfig;

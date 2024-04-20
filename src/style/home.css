@@ -25,6 +25,19 @@ main {
   position: sticky;
   top: 0;
 }
+.sidebar-header {
+  position: -webkit-sticky;
+  position: fixed;
+  top: 0;
+  ::after {
+    content: "";
+    width: 70%;
+    border-bottom: solid 1px grey;
+    padding-top: var(--flex-gap-md);
+    margin: auto;
+  }
+}
+
 .nav::before {
   content: "";
   position: absolute;

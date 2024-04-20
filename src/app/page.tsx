@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import { HomeLayout } from "../layouts/home-layout";
+import { HomeLayout } from "../components/layouts/home-layout";
 import { getWebsite } from "../../sanity/sanity-utils";
 import Link from "next/link";
 

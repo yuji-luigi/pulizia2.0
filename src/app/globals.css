@@ -1,13 +1,27 @@
+@font-face {
+  font-family: "NHaasGroteskDSPro-65Md";
+  src: url("https://db.onlinewebfonts.com/t/c891e94039740e4a24a9f53324fd91be.eot");
+  src: url("https://db.onlinewebfonts.com/t/c891e94039740e4a24a9f53324fd91be.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/c891e94039740e4a24a9f53324fd91be.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/c891e94039740e4a24a9f53324fd91be.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/c891e94039740e4a24a9f53324fd91be.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/c891e94039740e4a24a9f53324fd91be.svg#NHaasGroteskDSPro-65Md")
+      format("svg");
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  /* --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", */
+  /* "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", */
+  /* "Fira Mono", "Droid Sans Mono", "Courier New", monospace; */
 
-  /* --foreground-rgb: 100, 100, 100;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 100, 100, 100; */
+  --foreground-rgb: 100, 100, 100;
+  --background: #faf9f6;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -38,7 +52,13 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
   --flex-gap-md: 1rem;
+
+  --font-size: 1.5rem;
+
+  --padding-xl: 3rem;
+  --padding-md: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -80,21 +100,17 @@
   margin: 0;
 }
 
-html,
-body {
+html {
   height: 100%;
   max-width: 100vw;
   overflow-x: hidden;
+  font-size: 62.5%;
+  font-family: "NHaasGroteskDSPro-65Md";
 }
 
 body {
-  /* color: rgb(var(--foreground-rgb)); */
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+  font-size: var(--font-size);
+  background: var(--background);
 }
 
 a {

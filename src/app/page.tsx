@@ -66,8 +66,10 @@ export default async function Home() {
               <Image
                 className="image"
                 key={index}
-                height={image.height}
-                width={image.width}
+                // height={image.height}
+                // width={image.width}
+                height={400}
+                width={250}
                 src={`https://source.unsplash.com/random/${image.width}x${image.height}`}
                 alt="logo"
               />

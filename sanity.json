@@ -2,7 +2,7 @@
 	"root": true,
 	"project": {
 		"name": "Pulizia 2.0",
-		"basePath": "/admin"
+		"basePath": "/studio"
 	},
 	"api": {
 		"projectId": "5xo2k521",

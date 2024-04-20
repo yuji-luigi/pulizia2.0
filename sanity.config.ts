@@ -8,7 +8,7 @@ export default defineConfig({
   projectId: "5xo2k521",
   dataset: "production",
   plugins: [structureTool()],
-  basePath: "/admin",
+  basePath: "/studio",
   schema: {
     types: schemaTypes,
   },

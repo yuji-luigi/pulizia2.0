@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { HomeLayout } from "../layouts/home-layout";
 import { getWebsite } from "../../sanity/sanity-utils";
+import Link from "next/link";
 
 const images = [
   {
@@ -56,7 +57,6 @@ const images = [
 
 export default async function Home() {
   const [website] = await getWebsite();
-  console.log(website);
   return (
     <HomeLayout>
       <main>
@@ -80,6 +80,7 @@ export default async function Home() {
           attività tradizionale di solo superficie a una esperienza di consumo e
           un efficace strumento di comunicazione. Rafforzando la tua autenticità
           della storia di ogni azienda.
+          <Link href="/studio">Admin settings</Link>
         </footer>
       </main>
     </HomeLayout>

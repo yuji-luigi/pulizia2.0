@@ -54,10 +54,15 @@
 
   --flex-gap-md: 1rem;
 
-  --font-size: 1.5rem;
+  --font-size: 2rem;
 
   --padding-xl: 3rem;
   --padding-md: 1rem;
+  --flex-gap-xxl: 3rem;
+
+  --grid-temlate-layout: 1fr minmax(250px, 300px);
+
+  --header-nav-height: 8rem;
 }
 
 @media (prefers-color-scheme: dark) {

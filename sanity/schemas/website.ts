@@ -17,6 +17,11 @@ export default defineType({
       type: "string",
     }),
     defineField({
+      name: "footer",
+      title: "Footer",
+      type: "string",
+    }),
+    defineField({
       name: "owner",
       title: "Owner",
       type: "string",

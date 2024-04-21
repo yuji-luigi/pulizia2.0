@@ -10,7 +10,7 @@ export type Website = {
   address: string;
   email: string;
   image: string;
-
+  footer: string;
   url: string;
   content: PortableTextBlock[];
 };

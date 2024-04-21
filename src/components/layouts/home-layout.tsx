@@ -7,11 +7,9 @@ export const HomeLayout = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <Header />
+      <HeaderNav />
       <div className="main-grid">
-        <div>
-          <HeaderNav />
-          {children}
-        </div>
+        <div>{children}</div>
         <SideBar />
       </div>
     </>

@@ -6,12 +6,11 @@ export const Footer = async () => {
   const [website] = await getWebsite();
   return (
     <footer>
-      {website?.tel}
-      2.0, porta la pulizia a un step più qualificato, trasformandola da una
+      {website.footer}
+      {/* 2.0, porta la pulizia a un step più qualificato, trasformandola da una
       attività tradizionale di solo superficie a una esperienza di consumo e un
       efficace strumento di comunicazione. Rafforzando la tua autenticità della
-      storia di ogni azienda.
-      <Link href="/studio">Admin settings</Link>
+      storia di ogni azienda. */}
     </footer>
   );
 };

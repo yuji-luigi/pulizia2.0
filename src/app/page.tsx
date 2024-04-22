@@ -67,8 +67,8 @@ const images = [
 export const revalidate = 1;
 
 export default async function Home() {
-  const galleries = await getGalleries();
-  galleries.sort((a, b) => (a.title > b.title ? 1 : -1));
+  const galleries = await getGalleries().catch(console.error);
+  // galleries.sort((a, b) => (a.title > b.title ? 1 : -1));
   return (
     <HomeLayout>
       <main>
@@ -83,6 +83,7 @@ export default async function Home() {
               // data-full-width={images[index].fullWidth}
               key={index}
             >
+              {image.title}
               <Image
                 className="image"
                 key={index}

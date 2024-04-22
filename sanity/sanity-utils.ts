@@ -26,7 +26,7 @@ export async function getWebsite(): Promise<Website[]> {
 
 export async function getGalleries(): Promise<Gallery[]> {
   return createClient(clientConfig).fetch(
-    groq`*[_type == "gallery" && active == true]{
+    groq`*[_type == "gallery" && active == true ] | order(title asc){
       _id,
       title,
       description,

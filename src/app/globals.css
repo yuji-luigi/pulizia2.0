@@ -22,6 +22,8 @@
   --foreground-rgb: 100, 100, 100;
   --background: #faf9f6;
 
+  --accent-color: #ea774c;
+
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #16abff33 0deg,

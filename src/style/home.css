@@ -31,6 +31,9 @@ main {
   font-weight: 700;
 }
 
+.logo {
+  color: var(--accent-color);
+}
 .main-grid {
   display: grid;
   grid-template-columns: var(--grid-temlate-layout);

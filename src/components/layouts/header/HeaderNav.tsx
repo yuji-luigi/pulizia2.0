@@ -26,7 +26,7 @@ export const HeaderNav = ({
         </a>
       </nav>
       <div className="side-header">
-        <h2 className="sidebar-title">Pulizia 2.0</h2>
+        <h2 className="sidebar-title logo">Pulizia 2.0</h2>
         <p className="sidebar-text">
           Pulizia 2.0 is a cleaning service in the city of Milan.
         </p>

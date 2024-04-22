@@ -1,8 +1,16 @@
 import React from "react";
 
-export const HeaderNav = () => {
+export const HeaderNav = ({
+  isHeaderVisible,
+}: {
+  isHeaderVisible: boolean;
+}) => {
+  console.log(!isHeaderVisible);
   return (
-    <div className="sticky-header layout-grid header-nav">
+    <div
+      className="sticky-header layout-grid header-nav"
+      data-is-visible={!isHeaderVisible}
+    >
       <nav className="nav">
         <a href="/" className="nav-link">
           PULIZIA

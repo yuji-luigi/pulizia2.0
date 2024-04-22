@@ -1,8 +1,8 @@
-import React from "react";
+import React, { MutableRefObject } from "react";
 
-export const Header = () => {
+export const Header = ({ headerRef }: { headerRef: MutableRefObject<any> }) => {
   return (
-    <header className="header">
+    <header ref={headerRef} className="header">
       <h2 className="logo-text">Pulizia 2.0</h2>
     </header>
   );

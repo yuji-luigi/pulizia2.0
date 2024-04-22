@@ -23,14 +23,14 @@ const images = [
   },
   {
     index: 4,
-    height: 281,
+    height: 201,
     width: 210,
     // fullWidth: true,
   },
   {
     index: 5,
     height: 290,
-    width: 270,
+    width: 380,
   },
   {
     index: 6,
@@ -39,8 +39,8 @@ const images = [
   },
   {
     index: 7,
-    height: 280,
-    width: 210,
+    height: 200,
+    width: 250,
   },
   {
     index: 8,
@@ -50,15 +50,20 @@ const images = [
   {
     index: 9,
     height: 270,
-    width: 301,
+    width: 1501,
   },
   {
     index: 10,
+    height: 270,
+    width: 301,
+  },
+  {
+    index: 11,
     height: 250,
     width: 410,
   },
   {
-    index: 11,
+    index: 12,
     height: 290,
     width: 400,
   },

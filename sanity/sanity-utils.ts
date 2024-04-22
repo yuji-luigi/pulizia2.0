@@ -32,7 +32,7 @@ export async function getGalleries(): Promise<Gallery[]> {
       description,
       "image": image.asset->url,
       text,
-    }`
+    }[0...9]`
   );
 }
 

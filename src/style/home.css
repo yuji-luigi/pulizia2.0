@@ -13,6 +13,18 @@ main {
     padding: var(--padding-xl);
     padding-right: 0;
   }
+  .sidebar-title {
+    /* transform: scale(0); */
+    opacity: 0;
+    font-size: 5rem;
+    transition: opacity 0.2s ease-in-out;
+  }
+}
+
+.header-nav[data-is-visible="true"] {
+  .sidebar-title {
+    opacity: 1;
+  }
 }
 .logo-text {
   font-size: 8rem;
@@ -72,7 +84,7 @@ main {
 
 .sticky-scroll {
   position: sticky;
-  top: 13rem;
+  top: 15rem;
   background-color: #f9f9f9;
   padding: 10px;
 }
@@ -140,7 +152,7 @@ main {
   :nth-child(7) {
     margin-left: auto;
   }
-  :nth-child(8) {
+  :nth-child(9) {
     width: 100% !important;
   }
 

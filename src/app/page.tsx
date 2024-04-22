@@ -63,6 +63,8 @@ const images = [
   },
 ];
 
+export const revalidate = 1;
+
 export default async function Home() {
   const [website] = await getWebsite();
   return (

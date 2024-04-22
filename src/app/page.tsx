@@ -72,7 +72,7 @@ const images = [
 export const revalidate = 1;
 
 export default async function Home() {
-  const galleries = await getGalleries().catch(console.error);
+  const galleries = await getGalleries();
   // galleries.sort((a, b) => (a.title > b.title ? 1 : -1));
   return (
     <HomeLayout>

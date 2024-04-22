@@ -1,14 +1,14 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { HomeLayout } from "../components/layouts/home-layout";
-import { getWebsite } from "../../sanity/sanity-utils";
+import { getGalleries, getWebsite } from "../../sanity/sanity-utils";
 import Link from "next/link";
 import { Footer } from "../components/layouts/footer/Footer";
 
 const images = [
   {
     index: 1,
-    height: 300,
+    height: 400,
     width: 200,
   },
   {
@@ -19,12 +19,13 @@ const images = [
   {
     index: 3,
     height: 280,
-    width: 400,
+    width: 300,
   },
   {
     index: 4,
     height: 281,
     width: 210,
+    // fullWidth: true,
   },
   {
     index: 5,
@@ -66,23 +67,30 @@ const images = [
 export const revalidate = 1;
 
 export default async function Home() {
-  const [website] = await getWebsite();
+  const galleries = await getGalleries();
+  galleries.sort((a, b) => (a.title > b.title ? 1 : -1));
   return (
     <HomeLayout>
       <main>
         <div className="image-grid">
-          {images.map((image, index) => (
-            <div key={index}>
+          {galleries.map((image, index) => (
+            <div
+              className="image-container"
+              style={{
+                height: images[index].height * 2,
+                width: images[index].width * 2,
+              }}
+              // data-full-width={images[index].fullWidth}
+              key={index}
+            >
               <Image
                 className="image"
                 key={index}
-                height={image.height * 2}
-                width={image.width * 2}
+                height={images[index].height * 2}
+                width={images[index].width * 2}
                 // height={400}
                 // width={250}
-                src={`https://source.unsplash.com/random/${image.width * 2}x${
-                  image.height * 2
-                }`}
+                src={image.image}
                 alt="logo"
               />
             </div>

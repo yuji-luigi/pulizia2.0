@@ -17,18 +17,14 @@ export default defineType({
     }),
 
     defineField({
-      name: "type",
-      title: "Type",
-      type: "string",
+      name: "active",
+      title: "Show in gallery",
+      type: "boolean",
       options: {
-        list: [
-          { title: "Option 1", value: "option1" },
-          { title: "Option 2", value: "option2" },
-          { title: "Option 3", value: "option3" },
-          // Add more options here
-        ],
+        layout: "switch",
       },
     }),
+
     defineField({
       name: "image",
       title: "Image",

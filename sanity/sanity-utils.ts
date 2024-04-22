@@ -3,6 +3,7 @@ import { Website } from "./types/Website";
 import clientConfig from "./config/client-config";
 import { Page } from "./types/Page";
 import { SideArticle } from "./types/SideArticle";
+import { Gallery } from "./types/Gallery";
 
 export async function getWebsite(): Promise<Website[]> {
   return createClient(clientConfig).fetch(
@@ -19,6 +20,18 @@ export async function getWebsite(): Promise<Website[]> {
       url,
       _createdAt,
       content
+    }`
+  );
+}
+
+export async function getGalleries(): Promise<Gallery[]> {
+  return createClient(clientConfig).fetch(
+    groq`*[_type == "gallery" && active == true]{
+      _id,
+      title,
+      description,
+      "image": image.asset->url,
+      text,
     }`
   );
 }

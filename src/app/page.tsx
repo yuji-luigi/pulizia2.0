@@ -83,7 +83,6 @@ export default async function Home() {
               // data-full-width={images[index].fullWidth}
               key={index}
             >
-              {image.title}
               <Image
                 className="image"
                 key={index}

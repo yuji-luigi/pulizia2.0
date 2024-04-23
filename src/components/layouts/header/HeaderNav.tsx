@@ -5,7 +5,6 @@ export const HeaderNav = ({
 }: {
   isHeaderVisible: boolean;
 }) => {
-  console.log(!isHeaderVisible);
   return (
     <div
       className="sticky-header layout-grid header-nav"

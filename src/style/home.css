@@ -45,7 +45,7 @@ main {
     height: 100%;
     opacity: 1;
     @media (max-width: 768px) {
-      font-size: 2.5rem;
+      /* font-size: 2.5rem; */
     }
   }
 }
@@ -72,7 +72,7 @@ main {
     width: 100%;
     .sidebar-title {
       text-align: center;
-      font-size: 4rem;
+      /* font-size: 4rem; */
     }
     .sidebar-text {
       display: none;
@@ -102,7 +102,7 @@ main {
   background-color: var(--background);
 
   .sidebar-title {
-    font-size: 4rem;
+    /* font-size: 1.8rem; */
   }
   &::after {
     content: "";
@@ -121,11 +121,6 @@ main {
     display: none;
   }
 }
-.sidebar-title {
-  opacity: 0;
-  height: 0;
-  transition: opacity 0.2s ease-in-out;
-}
 .side-bar-scroll-section {
   height: 100%;
 }
@@ -134,10 +129,21 @@ main {
   .sidebar-title {
     display: block;
     opacity: 1;
+    font-size: 4rem;
     height: 100%;
-    @media (max-width: 768px) {
+    @media (max-width: 769px) {
       font-size: 1.8rem;
     }
+  }
+}
+
+.sidebar-title {
+  opacity: 0;
+  height: 100%;
+  transition: opacity 0.2s ease-in-out;
+  font-size: 4rem;
+  @media (max-width: 769px) {
+    font-size: 1.8rem;
   }
 }
 

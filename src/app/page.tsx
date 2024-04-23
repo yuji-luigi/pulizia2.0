@@ -85,7 +85,6 @@ export default async function Home() {
                 height: images[index].height * 2,
                 width: images[index].width * 2,
               }}
-              // data-full-width={images[index].fullWidth}
               key={index}
             >
               <Image
@@ -93,14 +92,28 @@ export default async function Home() {
                 key={index}
                 height={images[index].height * 2}
                 width={images[index].width * 2}
-                // height={400}
-                // width={250}
                 src={image.image}
                 alt="logo"
               />
             </div>
           ))}
         </div>
+        <section style={{}}>
+          <div className="image-grid-mobile">
+            {galleries.map((image, index) => (
+              <div className="image-container" key={index}>
+                <Image
+                  className="image"
+                  key={index}
+                  height={images[index].height}
+                  width={images[index].width}
+                  src={image.image}
+                  alt="logo"
+                />
+              </div>
+            ))}
+          </div>
+        </section>
       </main>
       <Footer />
     </HomeLayout>

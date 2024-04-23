@@ -25,7 +25,7 @@ export const HeaderNav = ({
           OASI DI BENESSERE
         </a>
       </nav>
-      <div className="side-header">
+      <div className="side-header mobile">
         <h2 className="sidebar-title logo">Pulizia 2.0</h2>
         <p className="sidebar-text">
           Pulizia 2.0 is a cleaning service in the city of Milan.

@@ -11,6 +11,15 @@ export const Footer = async () => {
       attività tradizionale di solo superficie a una esperienza di consumo e un
       efficace strumento di comunicazione. Rafforzando la tua autenticità della
       storia di ogni azienda. */}
+      <section className="mobile info">
+        <article className="">
+          <h3>Contact</h3>
+          <p>{website.owner}</p>
+          <p>{website.address}</p>
+          <p>{website.email}</p>
+          <p>{website.tel}</p>
+        </article>
+      </section>
     </footer>
   );
 };

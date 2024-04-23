@@ -60,9 +60,17 @@
 
   --padding-xl: 3rem;
   --padding-md: 1rem;
+
+  --layout-spacing: var(--padding-xl);
+
   --flex-gap-xxl: 3rem;
 
   --grid-temlate-layout: 1fr minmax(250px, 300px);
+  @media (max-width: 768px) {
+    --grid-temlate-layout: 1fr minmax(50px, 150px);
+    --layout-spacing: var(--padding-md);
+  }
+  /* --grid-temlate-layout: 1fr 1fr; */
 
   --header-nav-height: 8rem;
 }

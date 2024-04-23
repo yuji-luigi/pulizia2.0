@@ -266,19 +266,15 @@ footer {
   font-size: 2.5rem;
   font-weight: 700;
   .info {
-    display: grid;
+    display: none;
     place-items: end;
     font-size: 1.5rem;
     font-weight: 300;
+    @media (max-width: 768px) {
+      display: grid;
+    }
   }
 }
 
 .side-bar-footer {
-}
-
-.mobile {
-  display: none;
-  @media (max-width: 768px) {
-    display: block;
-  }
 }

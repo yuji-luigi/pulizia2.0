@@ -89,6 +89,10 @@ main {
   @media (max-width: 768px) {
     display: none;
   }
+  .sidebar-title {
+    text-align: center;
+    padding-bottom: var(--layout-spacing);
+  }
 }
 
 .side-header {
@@ -155,7 +159,7 @@ main {
 
 .sticky-scroll {
   position: sticky;
-  top: 15rem;
+  top: 17rem;
   background-color: #f9f9f9;
   padding: 10px;
 }

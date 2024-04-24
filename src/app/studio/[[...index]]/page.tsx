@@ -5,7 +5,7 @@ import config from "../../../../sanity.config";
 
 const AdminPage = () => {
   return (
-    <div style={{ fontSize: "80%" }}>
+    <div className="studio" style={{ fontSize: "unset" }}>
       <NextStudio config={config} />
     </div>
   );

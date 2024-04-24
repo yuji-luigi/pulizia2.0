@@ -6,7 +6,7 @@
 	},
 	"api": {
 		"projectId": "5xo2k521",
-		"dataset": "production"
+		"dataset": "production",
 	},
 	"plugins": []
 }

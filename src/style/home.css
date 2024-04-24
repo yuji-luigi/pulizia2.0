@@ -1,3 +1,6 @@
+html {
+  font-size: 62.5%;
+}
 .header {
   top: 0;
   width: 100%;
@@ -8,7 +11,7 @@
 }
 
 .logo-text {
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: 700;
   @media (max-width: 768px) {
     font-size: 3rem;
@@ -104,10 +107,6 @@ main {
   padding-left: 0;
   padding-bottom: 0;
   background-color: var(--background);
-
-  .sidebar-title {
-    /* font-size: 1.8rem; */
-  }
   &::after {
     content: "";
     display: block;
